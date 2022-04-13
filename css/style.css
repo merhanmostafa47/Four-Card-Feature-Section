@@ -39,7 +39,8 @@
 }
 
 .container {
-    padding: 3.5rem;
+    min-height: 100vh;
+    padding: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,13 +63,13 @@
 
 .heading__title {
     margin: 0;
-    color: var(--grayish-blue);
+    color: var(--very-dark-blue);
     font-family: 'ExtraLight';
     font-weight: normal;
+    font-size: 2.125rem;
 }
 
 .heading__title--bold {
-    color: var(--very-dark-blue);
     font-family: 'SemiBold';
 }
 
@@ -94,7 +95,7 @@
 /* Start cards */
 .cards {
     width: 80%;
-    margin: 2rem auto 0;
+    margin: 4rem auto 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
     grid-template-rows: repeat(2, 1fr);
@@ -134,11 +135,11 @@
     }
 
     .card--orange {
-        order: 4;
+        order: 3;
     }
 
     .card--blue {
-        order: 3;
+        order: 4;
         grid-row: auto;
     }
 
@@ -149,7 +150,6 @@
 
 .card__title {
     color: var(--very-dark-blue);
-    font-family: 'SemiBold';
     font-size: 1.375rem;
 }
 
